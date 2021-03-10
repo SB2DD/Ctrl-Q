@@ -3,11 +3,12 @@
   "id": "ctrl-q",
   "version": "${version}",
   "name": "Ctrl Q",
-  "description": "",
+  "description": "This mod forces CTRL Q to be used to drop a stack of item, overwriting the MacOS CMD key.",
   "authors": [],
   "contact": {},
   "license": "MIT",
   "environment": "client",
+  "icon": "assets/ctrl-q/icon.png",
   "entrypoints": {
     "main": [
       "me.polishkrowa.ctrlq.CtrlQ"

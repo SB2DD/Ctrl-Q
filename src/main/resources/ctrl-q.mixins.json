@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.polishkrowa.ctrlq.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": ["MixinMinecraftClient"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

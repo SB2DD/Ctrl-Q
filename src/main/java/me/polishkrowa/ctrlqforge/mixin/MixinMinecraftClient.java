@@ -27,5 +27,4 @@ public class MixinMinecraftClient {
         }
         ci.cancel();
     }
-//(InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), 341) || InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), 345))
 }

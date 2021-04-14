@@ -21,10 +21,7 @@ public class MixinHandledScreen {
 
     @Inject(method = "keyPressed", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/inventory/ContainerScreen;hasControlDown()Z"), cancellable = true)
     private void injected(int keyCode, int scanCode, int modifiers, CallbackInfoReturnable<Boolean> cir) {
-        //this.handleMouseClick(this.hoveredSlot, this.hoveredSlot.slotNumber, (InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), 341) || InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), 345)) ? 1 : 0, ClickType.THROW);
-
         this.handleMouseClick(this.hoveredSlot, this.hoveredSlot.slotNumber, InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), 341) || InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), 345) ? 1 : 0, ClickType.THROW);
-        //this.handleMouseClick(this.hoveredSlot, this.hoveredSlot.slotNumber,  1 , ClickType.THROW);
         cir.setReturnValue(true);
     }
 

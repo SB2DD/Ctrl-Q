@@ -1,5 +1,7 @@
 package me.polishkrowa.ctrlq.mixin;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.util.InputUtil;
@@ -12,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(HandledScreen.class)
+@Mixin(HandledScreen.class) @Environment(EnvType.CLIENT)
 public class MixinHandledScreen {
     @Shadow @Nullable public Slot focusedSlot;
 

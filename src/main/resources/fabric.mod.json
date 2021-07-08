@@ -4,8 +4,11 @@
   "version": "${version}",
   "name": "Ctrl Q",
   "description": "This mod forces CTRL Q to be used to drop a stack of item, overwriting the MacOS CMD key.",
-  "authors": [],
-  "contact": {},
+  "authors": ["PolishKrowa"],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/ctrl-q",
+    "sources": "https://github.com/Mrredstone5230/Ctrl-Q"
+  },
   "license": "MIT",
   "environment": "client",
   "icon": "assets/ctrl-q/icon.png",
@@ -19,6 +22,8 @@
   ],
   "depends": {
     "fabricloader": ">=0.11.2",
-    "minecraft": ">=1.16.4"
+    "minecraft": ">=1.17.1",
+    "java": ">=16",
+    "fabric": "*"
   }
 }

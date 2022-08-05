@@ -7,4 +7,6 @@ CurseForge mod page: https://www.curseforge.com/minecraft/mc-mods/ctrl-q
 
 (Basically, it forces the "ctrl" key to be used when dropping a stack of item instead of "cmd" on MacOS)
 
-PS: The mod was originally made and tested in 1.16.4 and 1.16.5. I think there'll be an error if you go under these versions, so don't do it.
+**((It also fixes a bug on all platforms for Java edition that restricted users from dropping items sequentially in non-player inventories :wink:))**
+
+PS: The mod was originally made and tested in 1.16.4 and 1.16.5. I think there'll be an error if you go under these versions, so don't do it. Currently, it is always tested on the latest version on the game, and it will work for 1.17.1+. (Other versions than latest aren't really tested, sorry. But it should work!)

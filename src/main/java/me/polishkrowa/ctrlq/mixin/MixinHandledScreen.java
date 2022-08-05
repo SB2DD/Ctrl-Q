@@ -23,7 +23,7 @@ public class MixinHandledScreen extends Screen {
 
     @ModifyArgs(method = "keyPressed", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/ingame/ContainerScreen;onMouseClick(Lnet/minecraft/container/Slot;IILnet/minecraft/container/SlotActionType;)V"))
     private void injected(Args args) {
-        args.set(2, InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 341) || InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 345) ? 1 : 0);
+        args.set(2, InputUtil.isKeyPressed(MinecraftClient.getInstance().window.getHandle(), 341) || InputUtil.isKeyPressed(MinecraftClient.getInstance().window.getHandle(), 345) ? 1 : 0);
     }
 
     @Inject(method = "init", at = @At(value = "TAIL"))

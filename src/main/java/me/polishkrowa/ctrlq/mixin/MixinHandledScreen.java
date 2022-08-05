@@ -22,7 +22,7 @@ public class MixinHandledScreen {
     private void injected(int keyCode, int scanCode, int modifiers, CallbackInfoReturnable<Boolean> cir) {
         this.onMouseClick(this.focusedSlot, this.focusedSlot.id, InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 341) || InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 345) ? 1 : 0, SlotActionType.THROW);
         
-        cir.setReturnValue(true);
+        cir.setReturnValue(false);
     }
 
     @Shadow(aliases = {"onMouseClick"})

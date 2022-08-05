@@ -1,4 +1,5 @@
 # Ctrl-Q
+## DOESN'T WORK!! (1.8)
 This **Forge** mod forces CTRL-Q for dropping a stack of items (Helpful for macos users)
 
 CurseForge mod page: https://www.curseforge.com/minecraft/mc-mods/ctrl-q

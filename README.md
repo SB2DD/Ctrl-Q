@@ -1,4 +1,4 @@
-# Ctrl-Q
+# Ctrl-Q (1.14)
 This **Fabric** mod forces CTRL-Q for dropping a stack of items (Helpful for macos users)
 
 CurseForge mod page: https://www.curseforge.com/minecraft/mc-mods/ctrl-q

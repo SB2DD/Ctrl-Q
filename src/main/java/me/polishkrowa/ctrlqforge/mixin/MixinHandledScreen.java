@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 @Mixin(GuiContainer.class)
 public class MixinHandledScreen extends GuiScreen {
 
-    @ModifyArgs(method = "keyTyped", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/inventory/GuiContainer;handleMouseClick(Lnet/minecraft/inventory/Slot;IILnet/minecraft/inventory/ClickType;)V",ordinal = 1))
+    @ModifyArgs(method = "keyTyped", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/inventory/GuiContainer;handleMouseClick(Lnet/minecraft/inventory/Slot;III)V",ordinal = 1))
     private void injected(Args args) {
         args.set(2, Keyboard.isKeyDown(29) || Keyboard.isKeyDown(157)? 1 : 0);
     }

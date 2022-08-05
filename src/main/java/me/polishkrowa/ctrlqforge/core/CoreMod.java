@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Mixins;
 import javax.annotation.Nullable;
 import java.util.Map;
 
-@IFMLLoadingPlugin.MCVersion("1.12.2")
+@IFMLLoadingPlugin.MCVersion("1.8.9")
 @IFMLLoadingPlugin.Name("Ctrl-Q Forge")
 public class CoreMod implements IFMLLoadingPlugin {
 

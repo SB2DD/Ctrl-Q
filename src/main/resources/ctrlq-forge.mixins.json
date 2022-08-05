@@ -5,5 +5,5 @@
   "refmap": "ctrlq-forge.refmap.json",
   "mixins": [],
   "client": ["MixinMinecraftClient","MixinHandledScreen"],
-  "minVersion": "0.8"
+  "minVersion": "0.7"
 }

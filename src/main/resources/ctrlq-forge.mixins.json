@@ -3,8 +3,7 @@
   "package": "me.polishkrowa.ctrlqforge.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "ctrlq-forge.refmap.json",
-  "mixins": [
-  ],
+  "mixins": [],
   "client": ["MixinMinecraftClient","MixinHandledScreen"],
   "minVersion": "0.8"
 }

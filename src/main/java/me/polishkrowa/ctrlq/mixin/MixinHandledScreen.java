@@ -26,9 +26,9 @@ public class MixinHandledScreen extends Screen {
         args.set(2, InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 341) || InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 345) ? 1 : 0);
     }
 
-    @Inject(method = "init", at = @At(value = "TAIL"))
-    private void injectedd(CallbackInfo ci) {
-        this.client.keyboard.setRepeatEvents(true);
-    }
+//    @Inject(method = "init", at = @At(value = "TAIL"))
+//    private void injectedd(CallbackInfo ci) {
+//        this.client.keyboard.setRepeatEvents(true);
+//    }
 
 }

@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[44,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "ctrlq"
+version = "${version}"
+displayName = "Ctrl Q"
+authors = "PolishKrowa"
+description = '''
+This mod forces CTRL Q to be used to drop a stack of item, overwriting the MacOS CMD key.
+'''
+credits = "Thanks unilock!"
+logoFile = "icon.png"
+displayURL = "https://modrinth.com/mod/ctrl-q/"
+
+[[dependencies.ctrlq]]
+modId = "forge"
+mandatory = true
+versionRange = "[44,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.ctrlq]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.3,)"
+ordering = "NONE"
+side = "CLIENT"

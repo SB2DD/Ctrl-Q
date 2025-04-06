@@ -1,5 +1,5 @@
 # Ctrl-Q
-This **Fabric** (and now Forge) mod forces CTRL-Q for dropping a stack of items (Helpful for macOS users)
+This **Fabric**, Forge and NeoForge mod forces CTRL-Q for dropping a stack of items (Helpful for macOS users)
 
 CurseForge mod page: https://www.curseforge.com/minecraft/mc-mods/ctrl-q
 

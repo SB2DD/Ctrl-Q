@@ -1,6 +1,7 @@
 modLoader = "javafml"
-loaderVersion = "[44,)"
-#issueTrackerURL = ""
+loaderVersion = "[49,)"
+issueTrackerURL = "https://github.com/SB2DD/Ctrl-Q/issues"
+clientSideOnly = true
 license = "MIT"
 
 [[mods]]
@@ -18,13 +19,13 @@ displayURL = "https://modrinth.com/mod/ctrl-q/"
 [[dependencies.ctrlq]]
 modId = "forge"
 mandatory = true
-versionRange = "[44,)"
+versionRange = "[49,)"
 ordering = "NONE"
 side = "CLIENT"
 
 [[dependencies.ctrlq]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.19.3,)"
+versionRange = "[1.20.4,)"
 ordering = "NONE"
 side = "CLIENT"

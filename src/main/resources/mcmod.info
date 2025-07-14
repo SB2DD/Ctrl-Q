@@ -1,16 +1,17 @@
 [
-  {
-    "modid": "ctrlq-forge",
-    "name": "Ctrl-Q Forge",
-    "description": "This mod forces CTRL Q to be used to drop a stack of item, overwriting the MacOS CMD key.",
-    "version": "${version}",
-    "mcversion": "1.8.9",
-    "url": "https://www.curseforge.com/minecraft/mc-mods/ctrl-q",
-    "updateUrl": "",
-    "authorList": ["PolishKrowa"],
-  "credits": "",
-  "logoFile": "icon.png",
+{
+  "modid": "ctrlq",
+  "name": "Ctrl-Q",
+  "description": "Forces CTRL+Q for dropping item stacks. Particularly helpful for macOS users where CMD+Q normally quits the application. Works in both inventory GUIs and hotbar.",
+  "version": "${version}",
+  "mcversion": "1.8.9",
+  "url": "https://github.com/polishkrowa/Ctrl-Q",
+  "updateUrl": "",
+  "authorList": ["polishkrowa"],
+  "credits": "Original mod by polishkrowa",
+  "logoFile": "",
   "screenshots": [],
-  "dependencies": []
-  }
+  "dependencies": [],
+  "acceptedMinecraftVersions": "1.8.9"
+}
 ]

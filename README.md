@@ -1,9 +1,41 @@
 # Ctrl-Q
-## DOESN'T WORK!! (1.8)
-This **Forge** mod forces CTRL-Q for dropping a stack of items (Helpful for macos users)
 
-CurseForge mod page: https://www.curseforge.com/minecraft/mc-mods/ctrl-q
+Client-side mod for Minecraft 1.8.9 Forge that enables CTRL+Q for dropping entire item stacks. Primarily designed for macOS users where CMD+Q quits the application instead of dropping items.
 
-(Basically, it forces the "ctrl" key to be used when dropping a stack of item instead of "cmd" on MacOS)
+## Installation
 
-PS: The mod was made and tested in 1.16.5. I think there'll be an error if you go under these versions, so don't do it.
+1. Install Minecraft Forge 1.8.9
+2. Place the mod JAR in your `mods` folder
+3. Launch Minecraft
+
+## Usage
+
+Press CTRL+Q to drop entire item stacks:
+- In hotbar (when no GUI is open)
+- In inventory containers (chests, furnaces, etc.)
+
+The mod respects your configured drop key binding.
+
+## Technical Implementation
+
+- Uses Forge event system (`InputEvent.KeyInputEvent`, `GuiScreenEvent.KeyboardInputEvent`)
+- Implements proper networking via `PlayerController.windowClick()`
+- Reflection-based slot access for GUI containers
+- Compatible with vanilla servers and anti-cheat plugins
+
+## Limitations
+
+- Creative Mode inventory is not supported
+- Requires exactly Minecraft 1.8.9 with Forge
+
+## Building
+
+```bash
+JAVA_HOME=/path/to/java8 ./gradlew build
+```
+
+Requires Java 8 for compatibility with Minecraft 1.8.9.
+
+## License
+
+MIT License

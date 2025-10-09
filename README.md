@@ -1,6 +1,8 @@
 # Ctrl-Q
 This **Fabric**, Forge and NeoForge mod forces CTRL-Q for dropping a stack of items (Helpful for macOS users)
 
+## Since [25w41a, MC-22882](https://bugs.mojang.com/browse/MC/issues/MC-22882) has been patched! This mod will therefore no longer be required from 1.21.11+
+
 CurseForge mod page: https://www.curseforge.com/minecraft/mc-mods/ctrl-q
 
 Modrinth: https://modrinth.com/mod/ctrl-q

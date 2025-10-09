@@ -16,7 +16,7 @@ public class MixinAbstractContainerScreen {
 
     @ModifyArg(method = "keyPressed", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/inventory/AbstractContainerScreen;slotClicked(Lnet/minecraft/world/inventory/Slot;IILnet/minecraft/world/inventory/ClickType;)V"), index = 2)
     private int hasCtrlDown(int isCtrlDown) {
-        var handle = Minecraft.getInstance().getWindow().getWindow();
+        var handle = Minecraft.getInstance().getWindow();
         return InputConstants.isKeyDown(handle, GLFW.GLFW_KEY_LEFT_CONTROL) || InputConstants.isKeyDown(handle, GLFW.GLFW_KEY_RIGHT_CONTROL) ? 1 : 0;
     }
 }

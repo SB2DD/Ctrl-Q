@@ -25,7 +25,7 @@ side = "CLIENT"
 [[dependencies.ctrlq]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.20.6,)"
+versionRange = "(1.21.8,)"
 ordering = "NONE"
 side = "CLIENT"
 
